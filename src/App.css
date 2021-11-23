@@ -44,6 +44,8 @@ body {
 
 .side_bar_header {
   margin-left: 10%;
+  padding: 10px;
+  height: 40px;
 }
 
 li {
@@ -56,9 +58,39 @@ li {
   flex-direction: column;
 }
 
+
 .bottom_link {
   margin-bottom: 15%;
   margin-top: auto;
   margin-left: auto;
   margin-right: auto;
+  color: #c79a20;
 }
+
+.side_bar_nav_icon {
+  float: right;
+  
+  margin-top: -5%;
+}
+
+.side_bar_nav_icon_small {
+  float: right;
+  margin-top: -5%;
+}
+
+.side_bar_nav_icon:hover {
+  color: #c79a20;
+}
+
+.side_bar_nav_icon_small:hover {
+  color: #c79a20;
+}
+
+.side_bar_nav_title {
+  color: white;
+  font-size: 20px;
+  overflow: hidden;
+}
+
+
+

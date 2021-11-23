@@ -22,11 +22,17 @@ const SideBar = (props) => {
         <div className="sidebar">
             <ProSidebar collapsed={sidebarPosition}>
                 <SidebarHeader className="side_bar_header">
-                    <MenuItem>Risk Management</MenuItem>
+                    
                     {sidebarPosition ? 
-                        <MenuItem icon={<FontAwesomeIcon icon={faArrowRight} onClick={onMaximizeSidebar}/>}></MenuItem>
+                        <>
+                        <MenuItem className="side_bar_nav_title">RM</MenuItem>
+                        <MenuItem className="side_bar_nav_icon" icon={<FontAwesomeIcon icon={faArrowRight} onClick={onMaximizeSidebar}/>}></MenuItem>
+                        </>
                     :
-                        <MenuItem icon={<FontAwesomeIcon icon={faArrowLeft} onClick={onMinimizeSidebar}/>}></MenuItem>
+                        <>
+                        <MenuItem className="side_bar_nav_title">Risk Management</MenuItem>
+                        <MenuItem className="side_bar_nav_icon"  icon={<FontAwesomeIcon icon={faArrowLeft} onClick={onMinimizeSidebar}/>}></MenuItem>
+                        </>
                     }
                 </SidebarHeader>
                 <Menu iconShape="square">
@@ -36,7 +42,7 @@ const SideBar = (props) => {
                         <MenuItem>Component 2</MenuItem>
                     </SubMenu>
                 </Menu>
-                <SidebarFooter  className="bottom_link">
+                <SidebarFooter className="bottom_link">
                     <MenuItem icon={<FontAwesomeIcon icon={faGithub}/>}></MenuItem>
                 </SidebarFooter>
             </ProSidebar>
