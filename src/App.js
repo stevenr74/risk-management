@@ -1,6 +1,8 @@
 import './App.css';
+import './components/RiskTolerance.css'
 import { useEffect } from 'react';
 import SideBar from './components/SideBar';
+import RiskTolerance from './components/RiskTolerance.js';
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
     <div className="App">
       <SideBar />
       <div className="body">
-
+        <RiskTolerance />
       </div>
     </div>
     

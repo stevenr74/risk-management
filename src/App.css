@@ -4,7 +4,8 @@
 }
 
 body {
-  background-color: black;
+  background-color: #212226;
+  color: white;
 }
 
 .App-logo {
@@ -53,9 +54,10 @@ li {
 }
 
 .sidebar {
-  display: flex;
-  height: 100vh;
-  flex-direction: column;
+  position: fixed;
+  height:100%;
+  top:0;
+  left:0;
 }
 
 
