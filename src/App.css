@@ -136,3 +136,22 @@ a:visited {
   position: relative;
   overflow: auto;
 }
+
+
+.body_transition-enter {
+  opacity: 0.01;
+}
+
+.body_transition.body_transition-active {
+  opacity: 0;
+  transition: opacity 500ms ease-in;
+}
+
+.body_transition-leave {
+  opacity: 0;
+}
+
+.body_transition.body_transition-active {
+  opacity: 0.01;
+  transition: opacity 300ms ease-in;
+}

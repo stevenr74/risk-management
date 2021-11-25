@@ -14,30 +14,25 @@ const SideBar = (props) => {
     const [animateTextTransition, setAnimateTextTransition] = useState(false);
     const timeout = 200;
 
-    const {goToRiskTolerance, sidebarSetting} = props;
+    const {goToRiskTolerance, goToHome, sidebarSetting} = props;
 
-    const resetAnimatedText = () => {
+    const resetAnimatedSidebar = () => {
         setTimeout(() => {
             setAnimateTextTransition(false);
         }, 200);
+        sidebarSetting();
     }
 
     const onMinimizeSidebar = () => {
         setSidebarPosition(true);
-
         setAnimateTextTransition(true);
-        resetAnimatedText();
-
-        sidebarSetting();
+        resetAnimatedSidebar();
     }
 
     const onMaximizeSidebar = () => {
         setSidebarPosition(false);
-
         setAnimateTextTransition(true);
-        resetAnimatedText();
-
-        sidebarSetting();
+        resetAnimatedSidebar();
     }
 
     return (
@@ -61,7 +56,7 @@ const SideBar = (props) => {
                     }
                 </SidebarHeader>
                 <Menu iconShape="square">
-                    <MenuItem icon={<FontAwesomeIcon icon={faHome} className="small_icon"/>}>Home</MenuItem>
+                    <MenuItem onClick={goToHome} icon={<FontAwesomeIcon icon={faHome} className="small_icon"/>}>Home</MenuItem>
                     <MenuItem onClick={goToRiskTolerance} icon={<FontAwesomeIcon icon={faBalanceScale} className="small_icon"/>}>Risk Tolerance</MenuItem>
                     <SubMenu title="Examples" icon={<FontAwesomeIcon icon={faChess} className="small_icon" />}>
                         <MenuItem>Game 1</MenuItem>
