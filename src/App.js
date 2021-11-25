@@ -6,22 +6,22 @@ import RiskTolerance from './components/RiskTolerance.js';
 import Home from './components/Home.js';
 import {CSSTransition} from 'react-transition-group';
 
+const pages = {
+  HOME: "home",
+  RISK_TOLERANCE: "risk tolerance",
+}
+const animation_time = 300;
+
 
 function App() {
  const [page, setPage] = useState(0);
  const [sidebar, setSidebar] = useState(false);
  const [bodyAnimation, setBodyAnimation] = useState(false);
 
- const pages = {
-   HOME: "home",
-   RISK_TOLERANCE: "risk tolerance",
- }
- const animation_time = 200;
-
 
   useEffect( () => {
     document.title = 'Risk Management Basics';
-    setPage(pages.HOME);
+    setPage(pages.HOME); 
   }, []);
 
   const goToRiskTolerance = () => {
@@ -52,7 +52,7 @@ function App() {
       <CSSTransition
         in={bodyAnimation}
         classNames="body_transition"
-        timeout={500}
+        timeout={animation_time}
         >
         {
         <div className={sidebar ? "page_body_sidebar_min" : "page_body"}>
