@@ -14,6 +14,8 @@ const SideBar = (props) => {
     const [animateTextTransition, setAnimateTextTransition] = useState(false);
     const timeout = 200;
 
+    const {goToRiskTolerance, sidebarSetting} = props;
+
     const resetAnimatedText = () => {
         setTimeout(() => {
             setAnimateTextTransition(false);
@@ -25,6 +27,8 @@ const SideBar = (props) => {
 
         setAnimateTextTransition(true);
         resetAnimatedText();
+
+        sidebarSetting();
     }
 
     const onMaximizeSidebar = () => {
@@ -32,6 +36,8 @@ const SideBar = (props) => {
 
         setAnimateTextTransition(true);
         resetAnimatedText();
+
+        sidebarSetting();
     }
 
     return (
@@ -56,7 +62,7 @@ const SideBar = (props) => {
                 </SidebarHeader>
                 <Menu iconShape="square">
                     <MenuItem icon={<FontAwesomeIcon icon={faHome} className="small_icon"/>}>Home</MenuItem>
-                    <MenuItem icon={<FontAwesomeIcon icon={faBalanceScale} className="small_icon"/>}>Risk Tolerance</MenuItem>
+                    <MenuItem onClick={goToRiskTolerance} icon={<FontAwesomeIcon icon={faBalanceScale} className="small_icon"/>}>Risk Tolerance</MenuItem>
                     <SubMenu title="Examples" icon={<FontAwesomeIcon icon={faChess} className="small_icon" />}>
                         <MenuItem>Game 1</MenuItem>
                         <MenuItem>Game 2</MenuItem>
@@ -64,7 +70,7 @@ const SideBar = (props) => {
                 </Menu>
                 <SidebarFooter className="bottom_link">
                     <a href="https://github.com/stevenr74/">
-                        <FontAwesomeIcon icon={faGithub} size="48px" className="github_link"/>
+                        <FontAwesomeIcon icon={faGithub} size="5x" className="github_link"/>
                     </a> 
                 </SidebarFooter>
             </ProSidebar>

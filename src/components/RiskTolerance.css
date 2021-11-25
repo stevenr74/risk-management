@@ -1,8 +1,10 @@
 .risk_tolerance {
     text-align: center;
     justify-content: center;
-    width: 800px;
+    max-width: 800px;
 	position:relative;
-	margin: 0 auto;
+	margin-left: auto;
+    margin-right: auto;
     padding: 30px;
+    overflow: auto;
 }

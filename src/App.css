@@ -122,3 +122,17 @@ a:visited {
 .github_link {
   font-size: 24px;
 }
+
+.page_body {
+  margin-left: 270px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
+
+.page_body_sidebar_min {
+  margin-left: 80px;
+  width: auto;
+  position: relative;
+  overflow: auto;
+}
