@@ -8,3 +8,16 @@
     padding: 30px;
     overflow: auto;
 }
+
+.box-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    flex: 1;
+    min-width: 200px;
+    height: 400px;
+    margin: 2vw;
+    outline: 3px solid #747474;
+}

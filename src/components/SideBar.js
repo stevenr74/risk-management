@@ -19,7 +19,7 @@ const SideBar = (props) => {
     const resetAnimatedSidebar = () => {
         setTimeout(() => {
             setAnimateTextTransition(false);
-        }, 200);
+        }, timeout);
         sidebarSetting();
     }
 
