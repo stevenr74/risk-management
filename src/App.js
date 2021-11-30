@@ -11,7 +11,7 @@ const pages = {
   HOME: "home",
   RISK_TOLERANCE: "risk tolerance",
 }
-const animation_time = 300;
+const animation_time = 200;
 
 
 function App() {
@@ -34,18 +34,12 @@ function App() {
   }
 
   const sidebarSetting = () => {
+
     setSidebar(!sidebar);
-    handleAnimatedBody();
+    setBodyAnimation(!bodyAnimation);
+
   }
 
-  const handleAnimatedBody = () => {
-    setBodyAnimation(true);
-
-    setTimeout(() => {
-        setBodyAnimation(false);
-    }, animation_time);
-
-}
 
   return (
     <div className="App">
@@ -53,10 +47,15 @@ function App() {
       <CSSTransition
         in={bodyAnimation}
         classNames="body_transition"
-        timeout={animation_time}
+        timeout={{
+          enter: animation_time,
+          exit: 0, //bit of a hack - there is an exit animation, but its set to 
+                   //-done instead of -active as -active is not applying for some reason
+                   
+        }}
         >
         {
-        <div className={sidebar ? "page_body_sidebar_min" : "page_body"}>
+        <div className="page_body">
           {page === pages.HOME ? <Home /> : null}
           {page === pages.RISK_TOLERANCE ? <RiskTolerance /> : null}
         </div>

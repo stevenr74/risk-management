@@ -105,3 +105,36 @@ a:visited {
   overflow: auto;
 }
 
+.body_transition-enter {
+  margin-left: 270px;
+}
+
+.body_transition-enter-active {
+  margin-left: 90px;
+  transition: margin 200ms;
+}
+
+
+.body_transition-enter-done {
+  margin-left: 90px;
+}
+
+
+.body_transition-exit {
+  margin-left: 90px;
+}
+
+.body_transition-exit-active {
+  margin-left: 90px;
+  transition: margin 0.01ms;
+}
+
+.body_transition-exit-done {
+  transition: margin 200ms;
+  margin-left: 270px;
+}
+
+
+
+
+
