@@ -1,0 +1,51 @@
+.side_bar_header {
+    margin-left: 10%;
+    padding: 10px;
+    height: 40px;
+  }
+  
+
+
+.body_transition-enter {
+    opacity: 0;
+}
+  
+.body_transition-enter-active {
+opacity: 0;
+transition: opacity 100ms;
+}
+
+.body_transition-exit {
+opacity: 0;
+}
+
+.body_transition-exit-active {
+opacity: 1;
+transition: opacity 100ms;
+}
+
+.side_bar_nav_icon {
+float: right;
+
+margin-top: -5%;
+}
+
+.side_bar_nav_icon_small {
+float: right;
+margin-top: -5%;
+}
+
+.side_bar_nav_icon:hover {
+color: #c79a20;
+}
+
+.side_bar_nav_icon_small:hover {
+color: #c79a20;
+}
+
+.side_bar_nav_title {
+color: white;
+font-size: 20px;
+overflow: hidden;
+}
+

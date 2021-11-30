@@ -1,7 +1,7 @@
 .risk_tolerance {
     text-align: center;
     justify-content: center;
-    max-width: 800px;
+    max-width: 80vw;
 	position:relative;
 	margin-left: auto;
     margin-right: auto;
@@ -16,7 +16,7 @@
 
 .box {
     flex: 1;
-    min-width: 200px;
+    min-width: 300px;
     height: 400px;
     margin: 2vw;
     outline: 3px solid #747474;

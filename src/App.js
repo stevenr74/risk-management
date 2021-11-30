@@ -1,5 +1,6 @@
 import './App.css';
 import './components/RiskTolerance.css'
+import './components/SideBar.css'
 import { useEffect, useState } from 'react';
 import SideBar from './components/SideBar';
 import RiskTolerance from './components/RiskTolerance.js';
