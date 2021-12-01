@@ -63,29 +63,15 @@ li {
   color: #c79a20;
 }
 
-a:visited {
-  color: #c79a20;
+a, a:visited {
+  color: #c79a20;  
 }
+
 
 .small_icon {
   color: #c79a20;
 }
 
-
-.title_transition-enter {
-  opacity: 0;
-}
-.title_transition-enter-active {
-  opacity: 0.1;
-  transition: opacity 200ms;
-}
-.title_transition-exit {
-  opacity: 1;
-}
-.title_transition-exit-active {
-  opacity: 1;
-  transition: opacity 200ms;
-}
 
 .github_link {
   font-size: 24px;

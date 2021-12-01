@@ -21,6 +21,7 @@
     margin: 2vw;
     outline: 3px solid #747474;
     padding: 10px;
+    background-color: #2D2E31;
 }
 
 .scenario {
@@ -28,3 +29,12 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+a.box-clickable {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+}
+

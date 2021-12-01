@@ -2,14 +2,19 @@ import React from 'react'
 
 const horizon = "1 Year";
 const start = 10000;
-const target = 30000;
+const target = 20000;
 
 const RiskTolerance = (props) => {
 
     //display a few (3?) possible choices when investing a sum ($1000?) 
     //eg (and check investopedia on this) 
 
-    
+    const calculatePotential = (x) => {
+        let y = x / 100;
+        let potential = (y * start) + start;
+        return potential;
+    }
+
 
     return (
         <div className="risk_tolerance">
@@ -22,8 +27,8 @@ const RiskTolerance = (props) => {
                returns than more conservative investors.
             </p>
             <p>
-                In this example, different scenarios are presented with a specific investing horizon (e.g. you want to
-                use it as a downpayment). You should select the strategy that you think will accomplish this goal the best.
+                In this example, different scenarios are presented with a specific investing horizon. 
+                You should select the strategy that you think will accomplish this goal the best.
             </p>
             <div className="scenario">
                 <h3>Scenario 1</h3>
@@ -38,13 +43,22 @@ const RiskTolerance = (props) => {
                 </p>
             </div>
             <div className="box-container">
+                
                 <div className="box">
+                    <a href="#" className="box-clickable">
+                    <h3>
+                        Invest in S&P500 index fund.
+                    </h3>
+                    <h3>
+                        Upside Potential: 20%
+                    </h3>
+                    <h3>
+                        Downside Potential: -10%
+                    </h3>
                     <p>
-                        Invest $10000 in S&P500 index fund.
-                        Upside Potential: 50% Gains
-                        Downside Potential: 30% Loss
-
+                        some more text
                     </p>
+                    </a>
                 </div>
                 <div className="box">
                     <p>
