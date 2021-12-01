@@ -25,16 +25,18 @@ const RiskTolerance = (props) => {
                 In this example, different scenarios are presented with a specific investing horizon (e.g. you want to
                 use it as a downpayment). You should select the strategy that you think will accomplish this goal the best.
             </p>
-            <h3>Scenario 1</h3>
-            <p>
-                Investing Horizon: {horizon}
-            </p>
-            <p>
-                Starting Sum: ${start}
-            </p>
-            <p>
-                Target: ${target}
-            </p>
+            <div className="scenario">
+                <h3>Scenario 1</h3>
+                <p>
+                    Investing Horizon: {horizon}
+                </p>
+                <p>
+                    Starting Sum: ${start}
+                </p>
+                <p>
+                    Target: ${target}
+                </p>
+            </div>
             <div className="box-container">
                 <div className="box">
                     <p>

@@ -50,7 +50,7 @@ function App() {
         timeout={{
           enter: animation_time,
           exit: 0, //bit of a hack - there is an exit animation, but its set to 
-                   //-done instead of -active as -active is not applying for some reason
+                   //-done instead of -active as -active is not applying the anim for some reason
                    
         }}
         >

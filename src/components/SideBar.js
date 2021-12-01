@@ -42,7 +42,7 @@ const SideBar = (props) => {
                     {sidebarPosition ? 
                         <CSSTransition in={animateTextTransition} timeout={timeout} classNames="title_transition">
                             <>
-                            <MenuItem className="side_bar_nav_title">RM</MenuItem>
+                            <MenuItem className="side_bar_nav_title">Risk...</MenuItem>
                             <MenuItem className="side_bar_nav_icon" icon={<FontAwesomeIcon icon={faArrowRight} onClick={onMaximizeSidebar}/>}></MenuItem>
                             </>
                         </CSSTransition>
