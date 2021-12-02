@@ -6,8 +6,8 @@ Explains the basics of risk management using examples users can interact with to
 
 
 
-#Start
+# Start
 yarn start
 
-#Deploy
+# Deploy
 yarn deploy
