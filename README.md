@@ -4,10 +4,3 @@ Explains the basics of risk management using examples users can interact with to
 
 
 
-
-
-# Start
-yarn start
-
-# Deploy
-yarn deploy
