@@ -47,10 +47,3 @@
     transition: opacity 200ms;
   }
   
-a.bottom_link:visited {
-  color: #c79a20;
-}
-
-a.bottom_link {
-  color: #c79a20;
-}

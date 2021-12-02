@@ -1,19 +1,14 @@
 import React from 'react'
+import RiskScenario from './subcomponents/RiskScenario.js';
 
-const horizon = "1 Year";
-const start = 10000;
-const target = 20000;
 
 const RiskTolerance = (props) => {
 
     //display a few (3?) possible choices when investing a sum ($1000?) 
-    //eg (and check investopedia on this) 
+    //        
+    
+    //Go through aggressive, moderate, and convservative risk descriptions and examples eg when someone could decide on that strategy
 
-    const calculatePotential = (x) => {
-        let y = x / 100;
-        let potential = (y * start) + start;
-        return potential;
-    }
 
 
     return (
@@ -21,29 +16,24 @@ const RiskTolerance = (props) => {
             <h2>Risk Tolerance</h2>
             <p>
                Risk tolerance is the degree of variability in returns that an investor is willing to 
-               withstand in their portfolio. 
-               It is dependant on many factors such as a person's goals, age, and income, and personality.  
-               Investors with a higher tolerance for risk are willing to risk more money for larger 
-               returns than more conservative investors.
+               withstand in their portfolio. It is dependant on many factors such as a person's goals, 
+               age, income, and personality. Some investors are willing to partake in risky investments
+               is that their potential returns are larger.
             </p>
             <p>
-                In this example, different scenarios are presented with a specific investing horizon. 
-                You should select the strategy that you think will accomplish this goal the best.
+
             </p>
-            <div className="scenario">
-                <h3>Scenario 1</h3>
-                <p>
-                    Investing Horizon: {horizon}
-                </p>
-                <p>
-                    Starting Sum: ${start}
-                </p>
-                <p>
-                    Target: ${target}
-                </p>
-            </div>
+            <p> 
+               For example, a person is planning on purchasing a house in a year with
+               their money in savings. If they purchased a high volatility asset they could stand to make a larger
+               downpayment, or they could not be able to meet the minimum payment at all. 
+            </p>
+            <p>
+                In this example, different investing goals are presented. Select the strategy 
+                you think will accomplish this goal the best.
+            </p>
+            <RiskScenario />
             <div className="box-container">
-                
                 <div className="box">
                     <a href="#" className="box-clickable">
                     <h3>

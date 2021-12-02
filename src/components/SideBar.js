@@ -2,7 +2,7 @@ import React from 'react'
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter } from 'react-pro-sidebar';
 //import 'react-pro-sidebar/dist/css/styles.css';
 //import 'custom.scss';
-import './ProSidebarStyles.scss'
+import './CustomSidebar.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faHome, faChess, faBalanceScale } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -58,8 +58,8 @@ const SideBar = (props) => {
                     }
                 </SidebarHeader>
                 <Menu iconShape="square">
-                    <MenuItem onClick={goToHome} icon={<FontAwesomeIcon icon={faHome} className="small_icon"/>}>Home</MenuItem>
-                    <MenuItem onClick={goToRiskTolerance} icon={<FontAwesomeIcon icon={faBalanceScale} className="small_icon"/>}>Risk Tolerance</MenuItem>
+                    <MenuItem className="menu_item" onClick={goToHome} icon={<FontAwesomeIcon icon={faHome} className="small_icon"/>}>Home</MenuItem>
+                    <MenuItem className="menu_item" onClick={goToRiskTolerance} icon={<FontAwesomeIcon icon={faBalanceScale} className="small_icon"/>}>Risk Tolerance</MenuItem>
                     <SubMenu title="Examples" icon={<FontAwesomeIcon icon={faChess} className="small_icon" />}>
                         <MenuItem>Game 1</MenuItem>
                         <MenuItem>Game 2</MenuItem>
