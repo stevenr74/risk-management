@@ -1,6 +1,8 @@
 import React from 'react'
 import { ProSidebar, Menu, MenuItem, SubMenu, SidebarHeader, SidebarFooter } from 'react-pro-sidebar';
-import 'react-pro-sidebar/dist/css/styles.css';
+//import 'react-pro-sidebar/dist/css/styles.css';
+//import 'custom.scss';
+import './ProSidebarStyles.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowLeft, faArrowRight, faHome, faChess, faBalanceScale } from '@fortawesome/free-solid-svg-icons'
 import { faGithub } from '@fortawesome/free-brands-svg-icons';

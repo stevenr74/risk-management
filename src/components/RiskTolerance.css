@@ -1,7 +1,7 @@
 .risk_tolerance {
     text-align: center;
     justify-content: center;
-    max-width: 80vw;
+    max-width: 60vw;
 	position:relative;
 	margin-left: auto;
     margin-right: auto;
@@ -19,9 +19,12 @@
     min-width: 300px;
     height: 400px;
     margin: 2vw;
-    outline: 3px solid #747474;
+    /*outline: 3px solid #747474;*/
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
     padding: 10px;
     background-color: #2D2E31;
+
+    transition: .5s ease;
 }
 
 .scenario {
@@ -38,3 +41,17 @@ a.box-clickable {
     color: white;
 }
 
+
+
+.box:hover {
+    box-shadow:
+        1px 1px #c79a20,
+        2px 2px #c79a20,
+        3px 3px #c79a20,
+        4px 4px #c79a20,
+        5px 5px #c79a20,
+        6px 6px #c79a20;
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+    transition: .5s ease;
+}
